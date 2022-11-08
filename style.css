@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Fall in Love";
+  src: url(fil/Fall\ in\ love.ttf) format("truetype");
+}
+
+/** En tête **/
+
+.headeur{
+  width: 100%; 
+  background-image: url("vinyles-artistes/fond-top.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.icones{
+  display: inline;
+}
+
+.Tete {
+  position: relative;
+  text-align: center;
+  float: left
+}
+
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#bestmusic{
+
+  width: 600px;
+  height: 600px;
+
+
+}
+
+.navbar{
+
+  background-color:rgba(128, 128, 133, 0);
+   color: dark;
+   /*fixed:top;*/
+
+}
+
+.topnav .search {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search button {
+  float: left;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  background: white;
+  
+}
+
+.topnav .search button:hover {
+  background: #ccc;
+}
+
+header{
+      font-family: "Fall in Love";
+
+    background-image: url(vinyles-artistes/fond-top.jpg);
+}
