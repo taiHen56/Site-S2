@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="bestmusic.css">
 <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
 </head> 
@@ -54,9 +54,9 @@
 
 <nav role="navigation" class="primary-navigation">
   <ul>
-	<li><a class="menud" href="#">Nos Selections &dtrif;</a>
+	<li><a class="menud active" href="#" >Nos Selections &dtrif;</a>
       <ul class="dropdown">
-        <li><a href="#">Les Incourtounables</a></li>
+        <li><a href="#" >Les Incourtounables</a></li>
         <li><a href="#">Top des Ventes</a></li>
         <li><a href="#">Les Nouveautés</a></li>
         <li><a href="#">Les coup de coeur</a></li>
@@ -87,96 +87,61 @@
 
 </header>
 
-<!-- Incourtounables-->
+<nav class="filariane">
+    <i class="fa fa-caret-right"></i>
+    <a href="test.html">Accueil</a>
+    <i class="fa fa-caret-right"></i>
+    <a href="nosselec.html">Nos Sélections</a>
+    <i class="fa fa-caret-right"></i>
+    <a href="#" id="courant"></a>
 
-<h2 class="fallinlove titre">Les Incontournables</h2>
-<div class="incontournables_desk">
+
+</nav>
+
+<div class="container-fluid">
+    <div class="row rot">
+        <div class="galleriz col-lg-3 col-md-6 col-xs-12">
+            <div class="nos">
+                <h2>Nos Sélections</h2>
+            </div>
+            <div class="selec">
+                <p class="actived" id="cate" onclick="ariane">Les Incourtounables</p>
+                <p id="cate" onclick="ariane"> Le top des ventes</p>
+                <p id="cate" onclick="ariane">Les nouveautés</p>
+                <p id="cate" onclick="ariane">Les coups de coeur</p>
+            </div >
+        </div>
+        <div class="col-lg-9 col-md-12">
+            <h2 class="fallinlove"> Les Incourtounables </h2>
+            <div class="cate">
+                Categories <i class="txt"> Les Incourtounables (18 albums)</i>
+                <div class="enbas">
+
+                    <i class="fa fa-table"></i>
+                    <i class="fa fa-list-ul"></i>
+
+                    <div class="dropdown overr">
+                        Trier par &dtrif;<ul class="dropdown-content">
+                                    <li><a href="#" >Les Incourtounables</a></li>
+                                    <li><a href="#">Top des Ventes</a></li>
+                                    <li><a href="#">Les Nouveautés</a></li>
+                                    <li><a href="#">Les coup de coeur</a></li>
+                                 </ul>
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+        </div>
 
 
-<div class="gallery container-fluid">
-
-  <a target="_blank" href="#">
-    <img src="vinyles-artistes/beatles-abbey road.jpg" alt="beatles-abbey" width="600" height="400">
-
-    <div class="overlay">
-      <div class="alainterieur">
-		    <i class="fa fa-shopping-cart overr"></i>
-        <i class="fa fa-heart-o overl"></i></a>
-	    </div>
     </div>
 
-  </a>
-  <div class="desc">
-	<p><b>The Beatles</b></p>
-    <p><b>Abbey Road</b></p>
-  	<p>Pop Rock</p>
- 	<p><b>Prix : 28 €</b></p>
-  </div>
+
+
+
 </div>
-
-<div class="gallery">
-  <a target="_blank" href="#">
-    <img src="vinyles-artistes/adele30.jpg" alt="adele30" width="600" height="400">
-	<div class="overlay">
-    <div class="alainterieur">
-		    <i class="fa fa-shopping-cart overr"></i>
-        <i class="fa fa-heart-o overl"></i></a>
-
-
-	</div>
-  </div>
-  </a>
-  <div class="desc">
-	<p><b>Adele</b></p>
-    <p><b>30</b></p>
-  	<p>Pop Rock</p>
- 	<p><b>Prix : 40 €</b></p>
-  </div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="#">
-    <img src="vinyles-artistes/nirvana-nevermind.jpg" alt="nirvana-nevermind" width="600" height="400">
-
-    <div class="overlay">
-      <div class="alainterieur">
-		    <i class="fa fa-shopping-cart overr"></i>
-        <i class="fa fa-heart-o overl"></i></a>
-	    </div>
-    </div>
-  </a>
-  <div class="desc">
-	<p><b>Nirvana</b></p>
-    <p><b>Nevermind</b></p>
-  	<p>Indie Rock</p>
-  	<p><b>Prix : 22€</b></p>
-  </div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="vinyles-artistes/pinkfloyd dark side of the moon.jpg">
-    <img src="vinyles-artistes/pinkfloyd dark side of the moon.jpg" alt="pinkfloyd" width="600" height="400">
-    <div class="overlay">
-      <div class="alainterieur">
-		    <i class="fa fa-shopping-cart overr"></i>
-        <i class="fa fa-heart-o overl"></i></a>
-	    </div>
-    </div>
-  </a>
-  <div class="desc">
-	<p><b>Pink Floyd</b></p>
-    <p><b>The Dark Side of the Moon</b></p>
-  	<p>Prog & Post Rock</p>
-  	<p><b>Prix : 26 €</b></p>
-  </div>
-</div>	
-</div>
-
-<br>
-
-<!-- A pas louper-->
-
-<h2 class="fallinlove titre">A pas louper</h2>
 
 <div class="rienlouper_desk">
 
@@ -332,9 +297,8 @@
 </div>
 </div>
 
-<!-- La ligne caché !-->
 
-<div class="row rowh" id="voir">
+<div class="row" id="voir">
 
 
 <div class="gallery">
@@ -414,77 +378,19 @@
 </div>
 
 </div>
-<div class="bouton">
-  <div class="col-3">
-    <button class="plus" onclick="voirPlus()" id="btnVoir"> Montrer plus ...</button>
-  </div>
- </div>
-<br>
-<br>
-<!-- Artistes -->
 
 
-<section class="splide" aria-labelledby="carousel-heading">
-<h2 class="fallinlove titre">Artistes</h2>
-
-        
-
-  <div class="splide__track">
-		<ul class="splide__list">
-			<li class="splide__slide">
-        <img src="vinyles-artistes/cerrone.jpg" alt="cerrone.jpg" width="" height="">
-
-        <h5 classs="fallinlove">Ceronne</h5>
-        <p>6 Albums</p>
-      </li>
-			<li class="splide__slide">
-        <img src="vinyles-artistes/eilishbillie.jpg" alt="eilishbillie" width="" height="">
-
-        <h5 classs="fallinlove">Billie</h5> 
-        <p>6 Albums</p>
-      </li>
-			<li class="splide__slide">
-        <img src="vinyles-artistes/mickael jackson.jpg" alt="mickael" width="" height="">
-
-        <h5 classs="fallinlove">Mickael Jackson</h5>
-        <p>8 Albums</p>
-      </li>
-      <li class="splide__slide">
-        <img src="vinyles-artistes/selah-sue-ip_4.jpg" alt="selan sue" width="" height="">
-
-        <h5 classs="fallinlove">Selan Sue</h5>
-        <p>4 Albums</p>
-      </li>
-			<li class="splide__slide">
-        <img src="vinyles-artistes/adele.jpg" alt="adele" width="" height="">
-
-        <h5 classs="fallinlove">Adele</h5>
-        <p>7 Albums</p>
-      </li>
-			<li class="splide__slide">
-        <img src="vinyles-artistes/angele.jpg" alt="angele" width="" height="">
-
-        <h5 classs="fallinlove">Angele</h5>
-        <p>6 Albums</p>
-      </li>
-      <li class="splide__slide">
-        <img src="vinyles-artistes/gainsbourg.jpg" alt="gainsbourg" width="" height="">
-
-        <h5 classs="fallinlove">Serge Gainsbourg</h5>
-        <p>20 Albums</p>
-      </li>
-			<li class="splide__slide">
-        <img src="vinyles-artistes/gregporter.jpg" alt="gregporter" width="" height="">
-
-        <h5 classs="fallinlove">Gregporter</h5>
-        <p>5 Albums</p>
-      </li>
-		</ul>
-  </div>
-</section>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    
+  </ul>
+</nav>
 
 <!--Footer -->
-
 <footer>
 
   

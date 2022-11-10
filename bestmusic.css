@@ -1,7 +1,8 @@
 body {
-  background: #eeeeee;
+  background: #ffffff;
   font-family: "Roboto";
   src: url(fil/Roboto.ttf) format("truetype");
+  overflow-x: hidden;
 }
 
 #centred {
@@ -13,19 +14,25 @@ body {
 header {
   display: block;
   background: url(vinyles-artistes/fond-top.jpg);
+  background-size: cover;
 }
 
 .fallinlove {
   font-family: "Fall in Love";
   src: url(fil/Fall\ in\ love.ttf) format("truetype");
 }
+
+/*
+
+Premiere navBar
+
+*/
 .navbar {
   color: #fff;
   background: #936dde00 !important;
   padding: 5px 16px;
   border-radius: 0;
   border: none;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 .navbar img {
   border-radius: 50%;
@@ -54,8 +61,12 @@ header {
   padding-right: 35px;
   min-height: 38px;
   border: none;
-  background: #faf7fd;
-  border-radius: 3px !important;
+  background: #b1acb69a;
+  border-radius: 22px !important;
+  -webkit-border-radius: 22px !important;
+  -moz-border-radius: 22px !important;
+  -ms-border-radius: 22px !important;
+  -o-border-radius: 22px !important;
 }
 .search-box input:focus {
   background: #fff;
@@ -67,107 +78,51 @@ header {
   background: transparent;
   position: absolute;
   right: 0;
+  bottom: auto;
   z-index: 9;
   padding: 10px 7px;
   height: 100%;
 }
 .search-box i {
-  color: #a0a5b1;
+  color: #cd878986;
   font-size: 19px;
 }
 .navbar .nav-item i {
-  font-size: 18px;
+  font-size: 30px;
 }
 .navbar .nav-item span {
   position: relative;
   top: 3px;
 }
 .navbar .navbar-nav > a {
-  color: #efe5ff;
+  color: #4b0bb3;
   padding: 8px 15px;
   font-size: 14px;
 }
 .navbar .navbar-nav > a:hover,
 .navbar .navbar-nav > a:focus {
   color: #fff;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 4px rgb(221, 221, 221);
 }
 .navbar .navbar-nav > a > i {
   display: block;
-  text-align: center;
-}
-.navbar .dropdown-item i {
-  font-size: 16px;
-  min-width: 22px;
-}
-.navbar .dropdown-item .material-icons {
-  font-size: 21px;
-  line-height: 16px;
-  vertical-align: middle;
-  margin-top: -2px;
-}
-.navbar .nav-item.open > a,
-.navbar .nav-item.open > a:hover,
-.navbar .nav-item.open > a:focus {
-  color: #fff;
-  background: none !important;
-}
-.navbar .dropdown-menu {
-  border-radius: 1px;
-  border-color: #e5e5e5;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-.navbar .dropdown-menu a {
-  color: #777 !important;
-  padding: 8px 20px;
-  line-height: normal;
-  font-size: 15px;
-}
-.navbar .dropdown-menu a:hover,
-.navbar .dropdown-menu a:focus {
-  color: #333 !important;
-  background: transparent !important;
-}
-.navbar .navbar-nav .active a,
-.navbar .navbar-nav .active a:hover,
-.navbar .navbar-nav .active a:focus {
-  color: #fff;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
-  background: transparent !important;
-}
-.navbar .navbar-nav .user-action {
-  padding: 9px 15px;
-  font-size: 15px;
-}
-.navbar .navbar-toggle {
-  border-color: #fff;
-}
-.navbar .navbar-toggle .icon-bar {
-  background: #fff;
-}
-.navbar .navbar-toggle:focus,
-.navbar .navbar-toggle:hover {
-  background: transparent;
-}
-.navbar .navbar-nav .open .dropdown-menu {
-  background: #faf7fd;
-  border-radius: 1px;
-  border-color: #faf7fd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-.navbar .divider {
-  background-color: #e9ecef !important;
+  text-align: left;
 }
 
-/* DEuxieme nav*/
+/* 
+
+Deuxieme nav
+
+*/
 
 .primary-navigation {
   margin: 0 auto;
   display: block;
 
-  padding: 120px 0 0 0;
+  padding: 12px 0 120px 0;
   text-align: center;
   font-size: 16px;
+  z-index: auto;
 }
 .primary-navigation ul li {
   list-style: none;
@@ -179,12 +134,24 @@ header {
   text-align: center;
 }
 
-.primary-navigation li a {
-  color: black;
+.dropdown a {
+  color: #020103;
+  font-size: 20px;
+}
+
+.primary-navigation .menud {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
 }
 
 .primary-navigation li a:hover {
-  color: #3ca0e7;
+  color: #ffffff;
+  text-shadow: 0 0 4px rgb(255, 254, 254);
+}
+
+.primary-navigation .active{
+  color: #694748;
+  text-shadow: 0 0 4px rgb(255, 254, 254);
 }
 
 .primary-navigation li:hover {
@@ -198,7 +165,8 @@ header {
   padding-left: 0;
   left: 0;
   display: none;
-  background: white;
+  background: #a15b5daf;
+  z-index: 10000;
 }
 
 .primary-navigation ul li:hover > ul,
@@ -222,10 +190,27 @@ ul li ul li {
 
 .primary-navigation ul li ul li a:hover {
   padding-left: 10px;
-  border-left: 2px solid #e73c6f;
+  border-left: 2px solid #a33b5a;
 }
 
-/* Incontournables versionn desktop*/
+.filariane{
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  font:bold;
+  background: transparent;
+
+}
+
+/* 
+
+Incontournables versionn desktop
+
+*/
+
+.titre {
+  margin-left: 10%;
+}
 
 .incontournables_desk {
   display: flex;
@@ -239,6 +224,109 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 20%;
+}
+
+.actived{
+  color:#c88284;
+}
+
+.rot{
+  display: flex;
+}
+
+div.galleriz {
+  margin: 5px;
+  border: 1px solid #ccc;
+  /**/
+  width: 20%;
+  flex: 1;
+  padding: 0;
+  
+}
+
+div.cate{
+  display: inline;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100%;
+}
+
+div.nos{
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+    color:white;
+
+  background-color: #6361618a;
+}
+
+div.selec {
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.enbas{
+  padding-top: 10%;
+}
+
+.enbas i{
+  font-size: 20px;
+}
+.enbas> i:hover,
+.enbas> i:focus {
+  color: rgb(252, 235, 0);
+  text-shadow: 0 0 4px rgb(129, 14, 14);
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown ul{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: #a15b5daf;
+  z-index: 10000;
+}
+
+.dropdown:hover > ul{
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+.dropdown-content ul li{
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 div.gallery:hover {
@@ -261,7 +349,8 @@ div.desc {
   bottom: 33%;
   left: 0;
   right: 0;
-  background-color: #c983857a;
+  background-color: #c983854d;
+  background-size: contain;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -273,40 +362,92 @@ div.gallery:hover .overlay {
 }
 
 .alainterieur {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  display: block;
+  font-size: 30px;
+  
 }
 
-i + i {
-  margin-left: 50px;
+.overr{
+ margin-left: 10px;
+ float: right;
 }
 
-/* Rienlouper version desktop*/
+.overl{
+  margin-right: 10px;
+  float: left;
+  bottom: 10px;
+}
+
+
+
+/* 
+
+Rienlouper version desktop
+
+*/
 
 .rienlouper_desk {
+  margin: auto;
   display: flex;
   justify-content: center;
   flex-flow: column;
+
+  position: relative;
 }
 
 div.rienlouper_desk div.row {
   display: flex;
+  justify-content: center;
   flex-flow: row;
+}
+
+.rowh {
+  visibility: collapse;
+}
+.bouton { 
+  position: absolute; right: 0;  width: 150px;  transform: translateY(-50%);
+  justify-content: center;
+  margin: auto;
+}
+.plus {
+  background-color: #d59299; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.plus:hover {
+  opacity: 0.75;
 }
 
 /*        
 
-		Arstistes Carousel
+		Artistes Carousel
 
 	*/
+
+  .page-link{
+    color:#c98385;
+  }
+
+  .page-link:hover{
+        color:#c98385;
+
+    background-color: #c983854d ;
+  }
 
 .splide__slide {
   justify-content: center;
 }
 
 .splide__slide p {
-  color: #777;
+  color: rgba(255, 255, 255, 0);
 }
 
 .splide__slide img {
@@ -319,8 +460,10 @@ div.rienlouper_desk div.row {
 
 */
 
-header {
-  display: block;
+footer {
+  font-size: 20px;
+  background: url(vinyles-artistes/fond-bottom.jpg);
+  background-size: cover;
 }
 
 .hr-lines {
@@ -352,7 +495,8 @@ header {
 }
 
 .fa {
-  color: #d9d5d5;
+  color: #d59299;
+  background: transparent;
 }
 
 #inp1 {
@@ -374,6 +518,30 @@ header {
 
 .btn :hover {
   opacity: 0.8;
+}
+
+.container-fluid .footer-icon > i:hover,
+.container-fluid .footer-icon > i:focus {
+  color: #fff;
+  text-shadow: 0 0 4px rgb(255, 254, 254);
+}
+
+.logos-vente {
+  display: flex;
+  justify-content: center;
+}
+
+.garanti {
+  margin-left: 100px;
+}
+
+.fin {
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-content: center;
+  vertical-align: baseline;
+  border-top: 1px solid #636161;
 }
 
 @media (min-width: 1200px) {
@@ -416,6 +584,10 @@ header {
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
+  }
+
+  div.gallery {
+    width: 44%;
   }
 }
 
