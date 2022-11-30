@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: HtmlUnit
+Implementation-Version: 2.65.0
+Specification-Vendor: Gargoyle Software Inc.
+Specification-Title: HtmlUnit
+Build-Time: 2022-10-03 07:54
+Build-Jdk-Spec: 1.8
+Created-By: Maven JAR Plugin 3.3.0
+Specification-Version: 2.65
+Url: http://htmlunit.sourceforge.net
+Implementation-Vendor: Gargoyle Software Inc.
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="false" classpath="." destdir="C:\Users\Rafael Tavares\Documents\Bayonetta" doctitle="ProjetJavadoc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" source="18" sourcefiles="src/fr/cda/projet/Produit.java,src/fr/cda/projet/Commande.java,src/fr/cda/projet/GUISite.java,src/fr/cda/projet/Site.java,src/fr/cda/projet/GUIModifierCommande.java,src/fr/cda/projet/IHMSite.java" sourcepath="src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>
